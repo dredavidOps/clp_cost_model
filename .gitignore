@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+backend/.venv/
+.pytest_cache/
+.venv/
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+
+# Tool artifacts
+.playwright-mcp/
+
+# Secrets & environment
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store

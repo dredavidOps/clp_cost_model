@@ -1,0 +1,70 @@
+{
+  "members": [
+    {
+      "id": "solomon",
+      "name": "Solomon",
+      "role": "Programme Lead",
+      "weekly_hours": 4.5,
+      "weeks": 12,
+      "hourly_rate": 20.0,
+      "include": true,
+      "m365_account": true,
+      "contribution": "Curriculum design, mentor coordination, founder check-ins"
+    },
+    {
+      "id": "david",
+      "name": "David",
+      "role": "Operations & Platform",
+      "weekly_hours": 3.5,
+      "weeks": 12,
+      "hourly_rate": 20.0,
+      "include": true,
+      "m365_account": true,
+      "contribution": "Tooling, scheduling, participant onboarding"
+    },
+    {
+      "id": "akua",
+      "name": "Akua",
+      "role": "Community & Marketing",
+      "weekly_hours": 3.5,
+      "weeks": 12,
+      "hourly_rate": 20.0,
+      "include": true,
+      "m365_account": true,
+      "contribution": "Content, alumni network, partner outreach"
+    },
+    {
+      "id": "intern",
+      "name": "Intern",
+      "role": "Assistant",
+      "weekly_hours": 4.0,
+      "weeks": 12,
+      "hourly_rate": 15.0,
+      "include": true,
+      "m365_account": true,
+      "contribution": "Admin support, research, session notes"
+    },
+    {
+      "id": "volunteer_1",
+      "name": "Volunteer 1",
+      "role": "Mentor Support",
+      "weekly_hours": 2.0,
+      "weeks": 12,
+      "hourly_rate": 15.0,
+      "include": true,
+      "m365_account": true,
+      "contribution": "Peer mentoring, session facilitation"
+    },
+    {
+      "id": "volunteer_2",
+      "name": "Volunteer 2",
+      "role": "Mentor Support",
+      "weekly_hours": 2.0,
+      "weeks": 12,
+      "hourly_rate": 15.0,
+      "include": true,
+      "m365_account": true,
+      "contribution": "Peer mentoring, session facilitation"
+    }
+  ]
+}

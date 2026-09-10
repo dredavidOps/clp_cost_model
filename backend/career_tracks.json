@@ -1,0 +1,355 @@
+{
+  "meta": {
+    "platform": "CareerLeap Academy",
+    "version": "2.0",
+    "stack_type": "startup_optimized",
+    "region": "Berlin, Germany",
+    "currency": "EUR",
+    "last_updated": "2026-08-16",
+    "cohort_defaults": {
+      "participants": 15,
+      "duration_months": 4,
+      "tracks_count": 3,
+      "team_leads": 3
+    }
+  },
+  "tracks": [
+    {
+      "id": "it_infrastructure",
+      "name": "IT Infrastructure & Support",
+      "short_name": "IT",
+      "role_in_simulation": "Central nervous system \u2014 manages identities, licenses, and the internal helpdesk for the entire cohort. Every other track depends on this one for access.",
+      "skills": [
+        "Google Workspace administration",
+        "Identity & access management (Google IAM)",
+        "User onboarding / offboarding",
+        "Ticketing lifecycle (Jira)",
+        "Secrets management (1Password)",
+        "Slack workspace governance",
+        "OAuth app management",
+        "2FA & security hygiene"
+      ],
+      "tools": [
+        {
+          "name": "Google Workspace Business Starter",
+          "category": "productivity",
+          "billing_model": "per_user_per_month",
+          "cost_per_user_per_month": 6.0,
+          "cost_total_for_cohort": 360.0,
+          "free_tier_available": false,
+          "why_chosen": "Simpler admin panel, better real-time collaboration, and 90% of Berlin startups run on it.",
+          "source_url": "https://workspace.google.com/pricing.html",
+          "last_verified": "2026-08-16"
+        },
+        {
+          "name": "Google Admin Console",
+          "category": "iam",
+          "billing_model": "bundled",
+          "cost_per_user_per_month": 0.0,
+          "cost_total_for_cohort": 0.0,
+          "free_tier_available": true,
+          "why_chosen": "One-click offboarding, group-based access, OAuth app management. No separate Entra ID bill.",
+          "source_url": "https://workspace.google.com/products/admin/",
+          "last_verified": "2026-08-16"
+        },
+        {
+          "name": "Jira Cloud",
+          "category": "ticketing",
+          "billing_model": "free_tier",
+          "cost_per_user_per_month": 0.0,
+          "cost_total_for_cohort": 0.0,
+          "free_tier_limit": "Up to 10 agents",
+          "why_chosen": "Purpose-built for agile teams. Confluence integrates natively. ServiceNow's ITIL rigidity kills startup velocity.",
+          "source_url": "https://www.atlassian.com/software/jira/pricing",
+          "last_verified": "2026-08-16"
+        },
+        {
+          "name": "1Password Teams",
+          "category": "security",
+          "billing_model": "per_user_per_month",
+          "cost_per_user_per_month": 6.0,
+          "cost_total_for_cohort": 360.0,
+          "free_tier_available": false,
+          "why_chosen": "Replaces AD password complexity. Participants learn secrets management, which is more relevant than Group Policy.",
+          "source_url": "https://1password.com/pricing",
+          "last_verified": "2026-08-16"
+        },
+        {
+          "name": "Slack",
+          "category": "communication",
+          "billing_model": "free_tier",
+          "cost_per_user_per_month": 0.0,
+          "cost_total_for_cohort": 0.0,
+          "free_tier_limit": "10,000 message history",
+          "why_chosen": "Every Berlin startup uses it. Participants learn Slack threading and channel hygiene.",
+          "source_url": "https://slack.com/pricing",
+          "last_verified": "2026-08-16"
+        }
+      ],
+      "track_total_tool_cost": 720.0,
+      "track_cost_per_participant": 48.0
+    },
+    {
+      "id": "data_analytics",
+      "name": "Data Analytics & Engineering",
+      "short_name": "Data",
+      "role_in_simulation": "Decision-support engine \u2014 builds the shared data warehouse and dashboards that Marketing and IT consume. Maintains the single source of truth for the simulated company.",
+      "skills": [
+        "SQL querying (PostgreSQL dialect)",
+        "Data cleaning & transformation",
+        "Analytical OLAP (DuckDB)",
+        "dbt modeling (Core CLI)",
+        "BI dashboard design (Metabase)",
+        "Python scripting (Pandas, NumPy)",
+        "Git & CI/CD (GitHub Actions)",
+        "ETL pipeline basics"
+      ],
+      "tools": [
+        {
+          "name": "PostgreSQL 16",
+          "category": "database",
+          "billing_model": "open_source",
+          "cost_per_user_per_month": 0.0,
+          "cost_total_for_cohort": 0.0,
+          "free_tier_available": true,
+          "why_chosen": "The standard for startup data stacks. Teaches the SQL dialect students will actually use.",
+          "source_url": "https://www.postgresql.org/",
+          "last_verified": "2026-08-16"
+        },
+        {
+          "name": "DuckDB",
+          "category": "analytics_engine",
+          "billing_model": "open_source",
+          "cost_per_user_per_month": 0.0,
+          "cost_total_for_cohort": 0.0,
+          "free_tier_available": true,
+          "why_chosen": "The biggest shift in analytics since Spark. Runs analytical queries on CSV/Parquet locally with zero infrastructure. Perfect for teaching ETL without cloud bills.",
+          "source_url": "https://duckdb.org/",
+          "last_verified": "2026-08-16"
+        },
+        {
+          "name": "dbt Core (CLI)",
+          "category": "transformation",
+          "billing_model": "open_source",
+          "cost_per_user_per_month": 0.0,
+          "cost_total_for_cohort": 0.0,
+          "free_tier_available": true,
+          "why_chosen": "Same SQL-based transformation logic as dbt Cloud, but runs in GitHub Actions or locally. Students learn the actual tool, not a SaaS wrapper.",
+          "source_url": "https://www.getdbt.com/pricing/",
+          "last_verified": "2026-08-16"
+        },
+        {
+          "name": "MotherDuck",
+          "category": "cloud_warehouse",
+          "billing_model": "free_tier",
+          "cost_per_user_per_month": 0.0,
+          "cost_total_for_cohort": 0.0,
+          "free_tier_limit": "Generous free tier",
+          "why_chosen": "If you need a shared cloud warehouse, MotherDuck is DuckDB-as-a-service. Way cheaper than Snowflake/BigQuery for small data.",
+          "source_url": "https://motherduck.com/pricing/",
+          "last_verified": "2026-08-16"
+        },
+        {
+          "name": "Metabase (self-hosted)",
+          "category": "bi_dashboard",
+          "billing_model": "open_source",
+          "cost_per_user_per_month": 0.0,
+          "cost_total_for_cohort": 0.0,
+          "free_tier_available": true,
+          "why_chosen": "The startup standard. Ask questions in SQL or GUI, build dashboards, embed sharing. Replaces Tableau/Power BI at 1/10th the cost.",
+          "source_url": "https://www.metabase.com/pricing/",
+          "last_verified": "2026-08-16"
+        },
+        {
+          "name": "GitHub Actions",
+          "category": "cicd",
+          "billing_model": "free_tier",
+          "cost_per_user_per_month": 0.0,
+          "cost_total_for_cohort": 0.0,
+          "free_tier_limit": "Public repos free",
+          "why_chosen": "Replaces expensive orchestrators (Airflow Cloud). Students learn Git + automation together.",
+          "source_url": "https://github.com/pricing",
+          "last_verified": "2026-08-16"
+        },
+        {
+          "name": "Railway / DigitalOcean",
+          "category": "hosting",
+          "billing_model": "fixed_monthly",
+          "cost_per_user_per_month": 1.0,
+          "cost_total_for_cohort": 60.0,
+          "free_tier_available": false,
+          "why_chosen": "Simple, predictable pricing. No surprise compute bills.",
+          "source_url": "https://railway.app/pricing",
+          "last_verified": "2026-08-16"
+        }
+      ],
+      "track_total_tool_cost": 60.0,
+      "track_cost_per_participant": 4.0
+    },
+    {
+      "id": "digital_marketing",
+      "name": "Digital Marketing & Content",
+      "short_name": "Marketing",
+      "role_in_simulation": "Growth & visibility arm \u2014 drives simulated lead generation and brand awareness. Depends on the Data track for performance dashboards and on the IT track for tool access and domain management.",
+      "skills": [
+        "No-code web building (Webflow)",
+        "Content strategy & editorial planning",
+        "SEO / SEM",
+        "Social media management",
+        "Campaign execution",
+        "Marketing analytics (GA4)",
+        "Copywriting",
+        "Newsletter growth (Beehiiv)"
+      ],
+      "tools": [
+        {
+          "name": "Webflow (Basic)",
+          "category": "website_builder",
+          "billing_model": "fixed_monthly",
+          "cost_per_user_per_month": 1.2,
+          "cost_total_for_cohort": 72.0,
+          "free_tier_available": false,
+          "why_chosen": "Visual builder, built-in hosting, SEO controls, and CMS collections. Marketers can build landing pages without touching PHP or plugins. The modern startup standard over WordPress.",
+          "source_url": "https://webflow.com/pricing",
+          "last_verified": "2026-08-16"
+        },
+        {
+          "name": "Ghost (Starter)",
+          "category": "cms",
+          "billing_model": "fixed_monthly",
+          "cost_per_user_per_month": 0.6,
+          "cost_total_for_cohort": 36.0,
+          "free_tier_available": false,
+          "why_chosen": "If the cohort focuses on content marketing and newsletters, Ghost is superior to WordPress. Clean editor, native newsletter delivery, no plugin hell.",
+          "source_url": "https://ghost.org/pricing/",
+          "last_verified": "2026-08-16"
+        },
+        {
+          "name": "Canva",
+          "category": "design",
+          "billing_model": "free_tier",
+          "cost_per_user_per_month": 0.0,
+          "cost_total_for_cohort": 0.0,
+          "free_tier_limit": "Full free tier sufficient for simulation",
+          "why_chosen": "Marketers need rapid asset creation. The free tier is sufficient for a simulation.",
+          "source_url": "https://www.canva.com/pricing/",
+          "last_verified": "2026-08-16"
+        },
+        {
+          "name": "Figma",
+          "category": "design",
+          "billing_model": "free_tier",
+          "cost_per_user_per_month": 0.0,
+          "cost_total_for_cohort": 0.0,
+          "free_tier_limit": "Up to 3 projects",
+          "why_chosen": "Clarify the boundary: Canva = marketing assets; Figma = web/UI layout. If budget is tight, marketers can prototype in Figma and export assets.",
+          "source_url": "https://www.figma.com/pricing/",
+          "last_verified": "2026-08-16"
+        },
+        {
+          "name": "Notion",
+          "category": "productivity",
+          "billing_model": "free_tier",
+          "cost_per_user_per_month": 0.0,
+          "cost_total_for_cohort": 0.0,
+          "free_tier_limit": "Unlimited pages",
+          "why_chosen": "Marketing teams run their entire editorial calendar in Notion. Replaces scattered WordPress admin notes.",
+          "source_url": "https://www.notion.so/pricing",
+          "last_verified": "2026-08-16"
+        },
+        {
+          "name": "Beehiiv",
+          "category": "email_marketing",
+          "billing_model": "free_tier",
+          "cost_per_user_per_month": 0.0,
+          "cost_total_for_cohort": 0.0,
+          "free_tier_limit": "Up to 2,500 subscribers",
+          "why_chosen": "Better analytics than Mailchimp and built for growth. Perfect for simulating a SaaS newsletter.",
+          "source_url": "https://www.beehiiv.com/pricing",
+          "last_verified": "2026-08-16"
+        },
+        {
+          "name": "Google Analytics 4",
+          "category": "analytics",
+          "billing_model": "free",
+          "cost_per_user_per_month": 0.0,
+          "cost_total_for_cohort": 0.0,
+          "free_tier_available": true,
+          "why_chosen": "Industry standard. Free and comprehensive.",
+          "source_url": "https://analytics.google.com/",
+          "last_verified": "2026-08-16"
+        },
+        {
+          "name": "Google Search Console",
+          "category": "seo",
+          "billing_model": "free",
+          "cost_per_user_per_month": 0.0,
+          "cost_total_for_cohort": 0.0,
+          "free_tier_available": true,
+          "why_chosen": "Essential for teaching technical SEO basics.",
+          "source_url": "https://search.google.com/search-console/",
+          "last_verified": "2026-08-16"
+        }
+      ],
+      "track_total_tool_cost": 108.0,
+      "track_cost_per_participant": 7.2
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "it_infrastructure",
+      "to": "data_analytics",
+      "deliverable": "Provisions Google accounts, licenses, and shared drives. Manages identity access. Handles support tickets when tools break."
+    },
+    {
+      "from": "it_infrastructure",
+      "to": "digital_marketing",
+      "deliverable": "Provisions Google accounts, licenses, and shared drives. Manages identity access. Handles support tickets when tools break."
+    },
+    {
+      "from": "data_analytics",
+      "to": "digital_marketing",
+      "deliverable": "Supplies Marketing with campaign-performance dashboards and ROI reports. Maintains the shared DuckDB/PostgreSQL warehouse."
+    },
+    {
+      "from": "data_analytics",
+      "to": "it_infrastructure",
+      "deliverable": "Supplies IT with ticket-volume and resolution-time analytics."
+    },
+    {
+      "from": "digital_marketing",
+      "to": "data_analytics",
+      "deliverable": "Requests tracking pixels, UTM structures, and event data from Data."
+    },
+    {
+      "from": "digital_marketing",
+      "to": "it_infrastructure",
+      "deliverable": "Requests tool access (e.g., new SaaS licenses, domain DNS changes) from IT."
+    }
+  ],
+  "cost_summary": {
+    "total_tool_cost": 888.0,
+    "cost_per_participant": 59.2,
+    "cost_breakdown_by_billing_model": {
+      "open_source": 0.0,
+      "free_tier": 0.0,
+      "free": 0.0,
+      "per_user_per_month": 720.0,
+      "fixed_monthly": 168.0,
+      "bundled": 0.0
+    },
+    "cost_breakdown_by_track": {
+      "it_infrastructure": 720.0,
+      "data_analytics": 60.0,
+      "digital_marketing": 108.0
+    }
+  },
+  "comparison_to_original_stack": {
+    "original_total_tool_cost": 4500.0,
+    "optimized_total_tool_cost": 888.0,
+    "savings_amount": 3612.0,
+    "savings_percentage": 80.27,
+    "original_cost_per_participant": 300.0,
+    "optimized_cost_per_participant": 59.2
+  }
+}

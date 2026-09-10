@@ -1,0 +1,229 @@
+{
+  "m365": {
+    "price_per_account_per_month": 7.28,
+    "source_url": "https://www.microsoft.com/en-us/microsoft-365/business/compare-all-microsoft-365-business-products",
+    "last_verified": "2026-08-17",
+    "note": "Microsoft 365 Business Basic per-user list price in EUR. Bundled accounts (Google Admin Console) do not add to this count."
+  },
+  "tools": [
+    {
+      "scope": "Shared",
+      "name": "Shared storage / domain allowance",
+      "include": true,
+      "cost_basis": "fixed",
+      "unit_cost": 100.0,
+      "billing_periods": 1,
+      "quantity": 1,
+      "included_cost": 100.0,
+      "source_id": "SHARED-01",
+      "delivery_note": "Google Drive shared storage top-up or domain registration allowance across all workstreams",
+      "owner": "David"
+    },
+    {
+      "scope": "IT Systems Admin",
+      "name": "Training tenant sandbox",
+      "include": true,
+      "cost_basis": "fixed",
+      "unit_cost": 150.0,
+      "billing_periods": 1,
+      "quantity": 1,
+      "included_cost": 150.0,
+      "source_id": "IT-01",
+      "delivery_note": "Separate Google/Azure sandbox tenant for IAM lab exercises",
+      "owner": "David"
+    },
+    {
+      "scope": "IT Systems Admin",
+      "name": "Azure credits",
+      "include": true,
+      "cost_basis": "fixed",
+      "unit_cost": 100.0,
+      "billing_periods": 1,
+      "quantity": 1,
+      "included_cost": 100.0,
+      "source_id": "IT-02",
+      "delivery_note": "Pay-as-you-go Azure credits for identity / VM labs",
+      "owner": "David"
+    },
+    {
+      "scope": "IT Systems Admin",
+      "name": "VM fallback instance",
+      "include": true,
+      "cost_basis": "fixed",
+      "unit_cost": 150.0,
+      "billing_periods": 1,
+      "quantity": 1,
+      "included_cost": 150.0,
+      "source_id": "IT-03",
+      "delivery_note": "Reserved small compute instance if local DuckDB/PostgreSQL not sufficient",
+      "owner": "David"
+    },
+    {
+      "scope": "IT Systems Admin",
+      "name": "Jira Cloud",
+      "include": true,
+      "cost_basis": "free_tier",
+      "unit_cost": 0.0,
+      "billing_periods": 1,
+      "quantity": 1,
+      "included_cost": 0.0,
+      "source_id": "IT-04",
+      "delivery_note": "Free tier up to 10 agents — sufficient for simulation",
+      "owner": "David"
+    },
+    {
+      "scope": "Data, BI & AI",
+      "name": "Cloud database credits",
+      "include": true,
+      "cost_basis": "fixed",
+      "unit_cost": 75.0,
+      "billing_periods": 1,
+      "quantity": 1,
+      "included_cost": 75.0,
+      "source_id": "DATA-01",
+      "delivery_note": "MotherDuck / Neon / Railway DB allowance for shared warehouse",
+      "owner": "Akua"
+    },
+    {
+      "scope": "Data, BI & AI",
+      "name": "Power BI / Tableau Public",
+      "include": true,
+      "cost_basis": "free_tier",
+      "unit_cost": 0.0,
+      "billing_periods": 1,
+      "quantity": 1,
+      "included_cost": 0.0,
+      "source_id": "DATA-02",
+      "delivery_note": "Use Metabase self-hosted or Tableau Public free tier",
+      "owner": "Akua"
+    },
+    {
+      "scope": "Data, BI & AI",
+      "name": "AI / LLM sandbox account",
+      "include": true,
+      "cost_basis": "free_tier",
+      "unit_cost": 0.0,
+      "billing_periods": 1,
+      "quantity": 1,
+      "included_cost": 0.0,
+      "source_id": "DATA-03",
+      "delivery_note": "OpenAI / Anthropic free credits or local LLM via Ollama",
+      "owner": "Akua"
+    },
+    {
+      "scope": "Product / Operations",
+      "name": "Jira / Confluence",
+      "include": true,
+      "cost_basis": "free_tier",
+      "unit_cost": 0.0,
+      "billing_periods": 1,
+      "quantity": 1,
+      "included_cost": 0.0,
+      "source_id": "OPS-01",
+      "delivery_note": "Reuse IT Jira free tier / Notion free plan",
+      "owner": "Solomon"
+    },
+    {
+      "scope": "Product / Operations",
+      "name": "Tool upgrade buffer",
+      "include": true,
+      "cost_basis": "free_tier",
+      "unit_cost": 0.0,
+      "billing_periods": 1,
+      "quantity": 1,
+      "included_cost": 0.0,
+      "source_id": "OPS-02",
+      "delivery_note": "Reserved line for future paid upgrades; zero in base case",
+      "owner": "Solomon"
+    },
+    {
+      "scope": "Digital Marketing",
+      "name": "Canva Pro",
+      "include": true,
+      "cost_basis": "free_tier",
+      "unit_cost": 0.0,
+      "billing_periods": 1,
+      "quantity": 1,
+      "included_cost": 0.0,
+      "source_id": "MKT-01",
+      "delivery_note": "Free tier sufficient for simulation assets",
+      "owner": "Akua"
+    },
+    {
+      "scope": "Digital Marketing",
+      "name": "Email / CRM tool",
+      "include": true,
+      "cost_basis": "free_tier",
+      "unit_cost": 0.0,
+      "billing_periods": 1,
+      "quantity": 1,
+      "included_cost": 0.0,
+      "source_id": "MKT-02",
+      "delivery_note": "Beehiiv free tier up to 2,500 subscribers",
+      "owner": "Akua"
+    },
+    {
+      "scope": "Digital Marketing",
+      "name": "Controlled campaign experiment",
+      "include": true,
+      "cost_basis": "fixed",
+      "unit_cost": 300.0,
+      "billing_periods": 1,
+      "quantity": 1,
+      "included_cost": 300.0,
+      "source_id": "MKT-03",
+      "delivery_note": "Small Google Ads / LinkedIn budget for simulated lead gen exercise",
+      "owner": "Akua"
+    },
+    {
+      "scope": "Digital Marketing",
+      "name": "Landing page builder",
+      "include": true,
+      "cost_basis": "free_tier",
+      "unit_cost": 0.0,
+      "billing_periods": 1,
+      "quantity": 1,
+      "included_cost": 0.0,
+      "source_id": "MKT-04",
+      "delivery_note": "Webflow free tier or Notion page sufficient for simulation",
+      "owner": "Akua"
+    }
+  ],
+  "other_external_costs": [
+    {
+      "item": "Accounting & VAT consultation",
+      "include": true,
+      "cost": 350.0,
+      "priority": "High",
+      "explanation": "Required for VAT registration, invoicing, and year-end reporting"
+    },
+    {
+      "item": "Legal review (enrolment, refunds, GDPR)",
+      "include": true,
+      "cost": 500.0,
+      "priority": "High",
+      "explanation": "Participant agreements, refund policy, GDPR/data processing terms"
+    },
+    {
+      "item": "Business liability insurance",
+      "include": false,
+      "cost": 0.0,
+      "priority": "Medium",
+      "explanation": "Optional until first paid cohort is live"
+    },
+    {
+      "item": "Paid recruitment advertising",
+      "include": false,
+      "cost": 0.0,
+      "priority": "Low",
+      "explanation": "Organic channels first; paid ads in marketing campaign experiment line"
+    },
+    {
+      "item": "Venue / travel logistics",
+      "include": false,
+      "cost": 0.0,
+      "priority": "Low",
+      "explanation": "Cohort is remote-first; no venue budget in base case"
+    }
+  ]
+}
